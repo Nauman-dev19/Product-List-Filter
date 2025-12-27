@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+.hero-section {
+	background-color: #f5f5f5;
+	padding: 50px 0;
+	.hero-heading {
+		font-size: 2.5rem;
+	}
+	margin: 22px;
+	text-align: center;
+	@media (min-width: 786px) {
+		.hero-heading {
+			font-size: 3rem;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "product-list-page",
+	"version": "1.0.0",
+	"description": "The Color Palette Generator is a front-end project built using HTML, SCSS, and JavaScript. It dynamically generates a palette of colors when the user clicks a button and displays the corresponding HEX color codes on each color box.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "tailwindcss -i ./src/tailwind/tailwindinput.css -o ./dist/css/tailwind.css --watch",
+		"build": "tailwindcss -i ./src/tailwind/tailwindinput.css -o ./dist/css/tailwind.css --minify"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.18",
+		"tailwindcss": "^4.1.18"
+	}
+}

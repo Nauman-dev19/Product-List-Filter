@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product List Filter</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="./css/tailwind.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<h1>Product List Filter</h1>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="hero-section">
+				<div class="hero-content">
+					<h2 class="hero-heading">Here are the all Available Products</h2>
+					<p class="hero-para">
+						For displaying the product list please click the show products
+						button below
+					</p>
+					<div class="hero-buttons">
+						<button class="btn" id="display-btn">Show Products</button>
+					</div>
+					<div class="filter-area !mt-4">
+						<label for="filter">Filter by Category:</label>
+						<select name="filter-selector" id="filter">
+							<option value="All" class="filter-options">All</option>
+							<option value="Electronics" class="filter-options">
+								Electronics
+							</option>
+							<option value="Footwear" class="filter-options">Footwear</option>
+							<option value="Fitness" class="filter-options">Fitness</option>
+							<option value="HomeAppliances" class="filter-options">
+								Home Appliances
+							</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<section class="products-section">
+				<div class="products-container" id="productsContainer">
+					<!-- Product cards will be generated here -->
+					<ul
+						class="product-list grid-cols-3 gap-6 hidden translate-x-2 transition-all duration-300 ease-in-out">
+						<!-- Product items will be inserted here dynamically -->
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 Product List. All rights reserved.</p>
+		</footer>
+		<!-- JavaScript Module -->
+		<script type="module" src="./js/app.js"></script>
+	</body>
+</html>

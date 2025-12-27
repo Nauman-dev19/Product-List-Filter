@@ -1,0 +1,17 @@
+$is-mobile: false !default;
+$mobile-breakpoint: 768px !default;
+$mobile-breakpoint-up: 769px !default;
+@mixin respond-to-mobile {
+	@media (max-width: $mobile-breakpoint) {
+		@content;
+	}
+}
+@mixin respond-to-desktop {
+	@media (min-width: $mobile-breakpoint-up) {
+		@content;
+	}
+}
+
+@media (max-width: 768px) {
+	$is-mobile: true;
+}
